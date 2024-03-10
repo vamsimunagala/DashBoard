@@ -4,9 +4,8 @@ const dotenv = require('dotenv');
 // Load the environment variables from .env file
 dotenv.config();
 
-// MongoDB connection URL
-// const mongoUrl = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_DATABASE}?retryWrites=true&w=majority`;
-const mongoUrl=`mongodb+srv://sameertalagadadeevi1778:sameer1305@cluster0.suggpqy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+const mongoUrl = `mongodb+srv://sameertalagadadeevi1778:sameer1305@cluster0.suggpqy.mongodb.net/DashBoard?retryWrites=true&w=majority&appName=Cluster0`;
+
 // Set up MongoDB connection
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
